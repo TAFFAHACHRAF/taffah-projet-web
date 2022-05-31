@@ -1,0 +1,66 @@
+
+GET http://localhost:4000/article/
+###
+
+POST http://localhost:4000/article/
+Content-Type: application/json
+
+{
+      "titre": "idugh",
+      "contenu": "yugzdiu",
+      "image": "",
+      "createdAt": "2022-05-18T00:00:00.000Z",
+      "updatedAt": "2022-05-26T00:00:00.000Z",
+      "published": true,
+      "authorId": "0",
+      "categories": [
+        {ategorie": {
+            
+          "articleId": 1,
+          "categorieId": 1,
+          "c"nom": "sports"
+          }
+        },
+        {
+          "articleId": 1,
+          "categorieId": 3,
+          "categorie": {
+            "nom": "info"
+          }
+        }
+      ]
+}
+###
+
+PATCH http://localhost:4000/article/2
+Content-Type: application/json
+
+{
+     "titre": "iduhziuefhiuzefhiuzehfiugh",
+      "contenu": "yugzdiu",
+      "image": "",
+      "createdAt": "2022-05-18T00:00:00.000Z",
+      "updatedAt": "2022-05-26T00:00:00.000Z",
+      "published": true,
+      "authorId": "0",
+      "categories": [
+        {ategorie": {
+            
+          "articleId": 1,
+          "categorieId": 1,
+          "c"nom": "sports"
+          }
+        },
+        {
+          "articleId": 1,
+          "categorieId": 3,
+          "categorie": {
+            "nom": "info"
+          }
+        }
+      ]
+}
+
+###
+DELETE http://localhost:4000/article/2
+

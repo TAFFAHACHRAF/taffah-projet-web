@@ -1,0 +1,28 @@
+
+GET http://localhost:4000/commentaire/2
+###
+
+POST http://localhost:4000/commentaire/
+Content-Type: application/json
+
+{
+     "id": 2,
+      "email": "taffah@gmail.com",
+      "contenu": "oidjziodhjidj",
+      "articleId": 6
+}
+###
+
+PATCH http://localhost:4000/commentaire/
+Content-Type: application/json
+
+{
+    "id": 5,
+    "email": "taffah@gmail.com",
+    "contenu": "ababa",
+    "articleId": 6
+}
+
+###
+DELETE http://localhost:4000/commentaire/5
+

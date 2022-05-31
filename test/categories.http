@@ -1,0 +1,23 @@
+GET http://localhost:4000/categorie
+###
+
+POST http://localhost:4000/categorie
+Content-Type: application/json
+
+{
+    "id": "0",
+    "nom": "pok"
+}
+###
+
+PATCH http://localhost:4000/categorie
+Content-Type: application/json
+
+{
+    "id": "3",
+    "nom": "anonim"
+}
+
+###
+DELETE http://localhost:4000/categorie/1
+

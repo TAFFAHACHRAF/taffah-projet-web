@@ -1,0 +1,29 @@
+GET http://localhost:4000/users/
+###
+
+POST http://localhost:4000/users/
+Content-Type: application/json
+
+{
+    "id": "102",
+    "nom": "poedi",
+    "email": "lekdijied",
+    "password": "zpodkzpojpodifj",
+    "role": "ADMIN"
+}
+###
+
+PATCH http://localhost:4000/users/0
+Content-Type: application/json
+
+{
+    "id": "0",
+    "nom": "hamada rajawi",
+    "email": "oezopfk@gmail.com",
+    "password": "7846554",
+    "role": "AUTHOR"
+}
+###
+
+DELETE http://localhost:4000/users/0
+
