@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blooger</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+    <style>
+                
+        .text-right {
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .pull-left {
+            float: left;
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .oveflow-auto {
+            overflow: auto;
+        }
+
+        .container {
+            padding: 10px;
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        /* specific page style */
+
+        .input-group {
+            overflow: auto;
+        }
+
+        .user-icon {
+            width: 10%;
+            display: inline-block;
+            float: left;
+            height: 64px;
+            background: url('../img/user_icon.png') no-repeat center center;
+        }
+
+        .comment-section {
+            margin-top: 15px;
+            overflow: auto;
+        }
+
+        .comment-box {
+            padding: 15px;
+            font-size: 1.1em;
+            width: 90%;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .comment-box.reply-comment {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .comment-details {
+            width: 90%;
+            float: left;
+        }
+
+        .comment-header {
+            color: #797979;
+            font-size: 0.8em;
+            margin-bottom: 5px;
+        }
+
+        .comment-body {
+            padding: 5px 0;
+            line-height: 150%;
+        }
+
+        .comment-feature {
+            color: #909090;
+        }
+
+        .comment-feature > span {
+            margin-right: 10px;
+        }
+
+        .comment-feature .reply-btn {
+            margin-left: 10px;
+            font-size: 0.8em;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Blooger</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#posts">Posts</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#category">Category</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="login/index.html">Admin space</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#footer">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+        <!------------------------ Site Title ---------------------->
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
+
+        <!-- ---------------------- Site Content -------------------------->
+
+        <section class="container" style="margin-left: 20%">
+            <div class="site-content">
+                <div class="posts" id="posts""">
+
+                    <hr style="border:1px solid white">
+                    <form method="GET" action="">
+                        <div class="add-comment">
+                            <div class="input-group">
+                                <img src="1.jpg" style="width:10%;margin-left:0">
+                                <p style="margin-top:-4%;margin-left:20%">Add your comment</p>
+                                <input style="background-color: whitesmoke" autocomplete="off" id="main-comment" name="comment" placeholder="Add comment..."
+                                    class="comment-box"/><br>
+                                <input type="reset" class="btn btn-succes" value="reset">
+                                <input type="submit" class="btn btn-danger" value="send">
+                            </div>
+                        </div>
+                    </form>
+                    
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="./assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="./assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="./assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="./assets/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2022 All rights reserved | made by
+                <a href="www.youtube.com/c/dailytuition" target="_black">Achraf TAFFAH <i class="fab fa-youtube"></i>
+                    Channel</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+    <script>
+            // Get id variable from url by Get methode
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const i=urlParams.get('id');
+            if(i){
+                // Get commentaires by id
+                const url1="http://localhost:4000/commentaire/";
+                $categoriesContainer = $(".sidebar .category .category-list");
+                function show1(data2){
+                    data2.commentaires.forEach(e2 => {
+                        if(e2.articleId == i){
+                            const dataContent = `
+                                <div class="input-group">
+                                    <img src="1.jpg" style="width:10%;margin-left:0">
+                                    <p style="margin-top:-4%;margin-left:20%">Anasa najib</p>
+                                    <input readonly autocomplete="off" id="main-comment" name="comment" placeholder="${e2.contenu}"
+                                        class="comment-box"/>
+                                </div>
+                            `;
+                        $articlesContainer.after(dataContent);
+                        }
+                    })
+                }
+                $.getJSON(url1).then(show1);
+
+            // Get all articles 
+            const url2 = "http://localhost:4000/article/";
+            $articlesContainer = $(".container .posts > hr");
+        
+            function show(data) {
+                const $card = $(".site-content .posts");
+                data.articles.forEach(e => {
+                var d = new Date(e.createdAt);
+                if(e.id == i){
+                console.log("hellow")
+                const dataContent = `
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/Blog-post/blog1.png" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    `+
+                                    // <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;${e.author.role} : ${e.author.nom} </span>
+                                    `<span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;${d.toISOString().slice(0,10)}</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">${e.titre}</a>
+                                <p>${e.contenu}</p>
+                            </div>
+                        </div>
+                `;
+                $articlesContainer.before(dataContent);
+                    }
+                });
+            }
+            $.getJSON(url2).then(show);
+            }
+            // else{
+            //     window.location="Index.html";
+            // }
+
+            const comment=urlParams.get('comment');
+            console.log(comment)
+
+            
+    </script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
